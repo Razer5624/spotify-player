@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotifyプレーヤー</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="player">
+    <img src="track-image.jpg" alt="トラック画像">
+    <h2>曲名</h2>
+    <div class="progress-bar">
+      <input type="range" id="seek-bar" min="0" max="100" value="0">
+    </div>
+    <div class="controls">
+      <button id="rewind">巻き戻し</button>
+      <button id="play-pause">再生/一時停止</button>
+      <button id="fast-forward">早送り</button>
+    </div>
+    <div class="volume">
+      <input type="range" id="volume-bar" min="0" max="100" value="50">
+    </div>
+  </div>
+  <button id="login-button">ログイン</button>
+  <script src="script.js"></script>
+</body>
+</html>
